@@ -18,9 +18,7 @@ development:
   encoding: unicode
   database: devise_pundit_lab_development
   pool:     5
-  username: devise_pundit_lab
-  password:
-  template: template0
+
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -46,9 +44,7 @@ test:
   encoding: unicode
   database: devise_pundit_lab_test
   pool:     5
-  username: devise_pundit_lab
-  password:
-  template: template0
+
 
 production:
   adapter:  postgresql
