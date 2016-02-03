@@ -19,6 +19,13 @@ The lab comes with a Rails skeleton with Devise installed.
 
 We've included the relevant models/controllers and views from the CanCanCan lab so you don't have to rebuild them.  The data model is exactly the same, the only difference is that we're using Roles and Pundit to authorize actions rather than [CanCanCan].
 
+#Note
+If you launch the app in the browser in its starting state it will error because some things the code depends on like current_user are no longer functional.  You'll need to start implementing devise to boot the app up in the browser.  Follow the tests.  
+
+**Hints**
+*Some tests might require you adding the flash to a layout.
+*If you use all the devise modules you will run into problems.  Figure out which ones you need and include only those modules.
+
 Using the User policy as a guide, write a spec for the NotePolicy class, then write the NotePolicy class. You should ensure that:
 
   * Users can:
@@ -41,11 +48,3 @@ Once your policy spec is written and passes, write feature specs for creating, r
 
 [Pundit]: https://github.com/elabs/pundit
 [CanCanCan]: https://github.com/CanCanCommunity/cancancan
-
-Blake Notes
-to pass devise specs
-need to add flash to layout
-+  <%= content_tag(:div, flash[:error], :id => "flash_error") if flash[:error] %>
-+  <%= content_tag(:div, flash[:notice], :id => "flash_notice") if flash[:notice] %>
-+  <%= content_tag(:div, flash[:alert], :id => "flash_alert") if flash[:alert] %>
-devise :database_authenticatable, :registerable, validatable
