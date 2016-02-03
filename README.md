@@ -41,3 +41,11 @@ Once your policy spec is written and passes, write feature specs for creating, r
 
 [Pundit]: https://github.com/elabs/pundit
 [CanCanCan]: https://github.com/CanCanCommunity/cancancan
+
+Blake Notes
+to pass devise specs
+need to add flash to layout
++  <%= content_tag(:div, flash[:error], :id => "flash_error") if flash[:error] %>
++  <%= content_tag(:div, flash[:notice], :id => "flash_notice") if flash[:notice] %>
++  <%= content_tag(:div, flash[:alert], :id => "flash_alert") if flash[:alert] %>
+devise :database_authenticatable, :registerable, validatable
