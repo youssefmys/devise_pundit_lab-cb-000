@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'pundit'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
 # Use sqlite3 as the database for Active Record
@@ -46,8 +45,8 @@ end
 gem 'devise'
 gem 'devise_invitable'
 gem 'high_voltage'
-gem 'pg'
 gem 'pundit'
+gem 'sqlite3'
 
 group :development do
   gem 'better_errors'
@@ -70,4 +69,3 @@ group :test do
   gem 'launchy'
   gem 'selenium-webdriver'
 end
-
