@@ -23,8 +23,8 @@ difference is that we're using Roles and Pundit to authorize actions rather than
 [CanCanCan].
 
 # Note
-If you launch the app in the browser in its starting state it will error because
-some things the code depends on like current_user are no longer functional.
+If you launch the app in the browser in its starting state it will throw an error. This occurs because
+certain things the code depends on, like `current_user`, are no longer functional.
 You'll need to start implementing devise to boot the app up in the browser.
 Follow the tests.
 
@@ -57,3 +57,5 @@ Once your policy spec is written and passes, write feature specs for creating, r
 [Pundit]: https://github.com/elabs/pundit
 [CanCanCan]: https://github.com/CanCanCommunity/cancancan
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/devise_pundit_lab'>Devise and Pundit Lab</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/devise_pundit_lab'>Devise and Pundit Lab</a> on Learn.co and start learning to code for free.</p>
