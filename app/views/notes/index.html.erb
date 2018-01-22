@@ -1,1 +1,8 @@
+<% if flash[:notice] %>
+  <div style = "color: #FFF; background-color: green;">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 <%= render @notes %>
+
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
